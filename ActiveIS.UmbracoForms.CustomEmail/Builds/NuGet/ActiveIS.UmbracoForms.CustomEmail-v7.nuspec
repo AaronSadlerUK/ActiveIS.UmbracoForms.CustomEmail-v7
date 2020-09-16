@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>ActiveIS.UmbracoForms.CustomEmail-v7</id>
+    <version>1.0.0</version>
+    <title>ActiveIS.UmbracoForms.CustomEmail-v7</title>
+    <authors>ActiveIS</authors>
+    <owners>ActiveIS</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/ActiveIS/ActiveIS.UmbracoForms.CustomEmail-v7</projectUrl>
+    <icon>logo.png</icon>
+    <description>A customizable email template which does not include the form data</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>umbraco umbraco-cms umbraco-forms</tags>
+	<dependencies>
+	  <group targetFramework=".NETFramework4.7.2">
+		  <dependency id="UmbracoForms" version="[7.4.0,8.0)" />
+		  <dependency id="UmbracoForms.Core" version="[7.4.0,8.0)" />
+		  <dependency id="UmbracoCms" version="[7.15.0,8.0)" />
+		  <dependency id="Mw.UmbracoForms.Rte" version="[1,2)" />
+	  </group>
+    </dependencies>
+  </metadata>
+    <files>
+      <file src="..\logo.png"/>
+      <file src="..\..\ActiveIS.UmbracoForms.CustomEmailV7\UI\App_Plugins\ActiveIS.UmbracoForms.CustomEmail\**\*"/>
+	  <file src="..\..\ActiveIS.UmbracoForms.CustomEmailV7\bin\Release\ActiveIS.UmbracoForms.CustomEmailV7.dll" target="lib\net472" />
+	  <file src="..\..\ActiveIS.UmbracoForms.CustomEmailV7\UI\Views\Partials\Forms\CustomEmails\CustomTemplate.html" target="content\Views\Partials\Forms\CustomEmails\" />
+	  <file src="..\..\ActiveIS.UmbracoForms.CustomEmailV7\UI\App_Plugins\ActiveIS.UmbracoForms.CustomEmail\**\*" target="content\App_Plugins\ActiveIS.UmbracoForms.CustomEmail\" />
+    </files>
+</package>
